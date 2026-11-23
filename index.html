@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Karan Sharma — AI/ML engineer</title>
+  <meta name="description" content="Karan Sharma is an AI/ML engineer who ships vision-language and diffusion models to production.">
+  <meta name="theme-color" content="#eef0f4">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✳</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <a class="logo" href="#top">KS✳</a>
+    <nav aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#thinking">Thinking</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="btn" href="#contact">Say hello</a>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <p class="hello">Hello, I'm Karan.</p>
+      <h1>Models are easy.<br>Shipping them is <em>the craft.</em></h1>
+      <p class="lede">AI/ML engineer. I take vision-language and diffusion models out of notebooks and into production, on real GPUs, with real deadlines.</p>
+      <a class="btn btn-dark" href="#work">See the work</a>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="track">
+        <span>Question everything ✳ Train it ✳ Quantize it ✳ Ship it ✳ Question everything ✳ Train it ✳ Quantize it ✳ Ship it ✳ </span>
+        <span>Question everything ✳ Train it ✳ Quantize it ✳ Ship it ✳ Question everything ✳ Train it ✳ Quantize it ✳ Ship it ✳ </span>
+      </div>
+    </div>
+
+    <section class="block short" id="short">
+      <h2>I work where a good model meets a bad GPU budget.</h2>
+      <div class="cols">
+        <p>I'm a Computer Science (AI &amp; ML) graduate from JNGEC Sundernagar, class of 2026, and an AI/ML engineer at Dripi, a fashion-tech startup. Day to day that means async APIs, quantization, and squeezing diffusion pipelines into 16GB of VRAM.</p>
+        <p>Before that I did research at IIT Mandi and NIT Hamirpur. My question-answering work with RoBERTa was accepted at ICMLDE 2024.</p>
+      </div>
+    </section>
+
+    <section class="block" id="work">
+      <h2>Selected work</h2>
+      <div class="cards">
+        <article class="card feature">
+          <p class="meta">Dripi · Production</p>
+          <h3>Virtual Try-On / Try-Off</h3>
+          <p>A FLUX pipeline that uses YOLO to build prompts across 66 clothing classes. Strict CPU offloading and parallel execution fit it inside 16GB of VRAM and cut generation time by 8 seconds.</p>
+          <p class="tags">FLUX · YOLO · PyTorch · Docker</p>
+        </article>
+        <article class="card feature">
+          <p class="meta">Dripi · Production</p>
+          <h3>Wardrobe Valuation API</h3>
+          <p>An async Qwen2-VL service in Docker. Semaphores and 4-bit quantization ended the 504 timeouts and GPU out-of-memory crashes.</p>
+          <p class="tags">Qwen2-VL · FastAPI · Docker · Quantization</p>
+        </article>
+        <article class="card">
+          <p class="meta">Full-stack</p>
+          <h3>Price Pilot</h3>
+          <p>Real-time price tracking and review aggregation across shops, with an LLM that turns reviews into clear insights.</p>
+          <p class="tags">Flask · Playwright · React · MongoDB</p>
+        </article>
+        <article class="card">
+          <p class="meta">LLM tool</p>
+          <h3>Cold Mail Generator</h3>
+          <p>Writes personalized cold emails with LLaMA 3.3 and uses ChromaDB similarity search to attach the most relevant portfolio links.</p>
+          <p class="tags">LangChain · ChromaDB · Streamlit</p>
+        </article>
+        <article class="card">
+          <p class="meta">Deep learning</p>
+          <h3>ESRGAN Super-Resolution</h3>
+          <p>Rebuilds sharp images from low-resolution inputs. Reached 25.15 dB PSNR and 0.90 SSIM on DIV2K.</p>
+          <p class="tags">PyTorch · GAN · OpenCV</p>
+        </article>
+        <article class="card">
+          <p class="meta">NLP · Published</p>
+          <h3>Extractive QA with RoBERTa</h3>
+          <p>Fine-tuned on SQuAD and presented at the 3rd International Conference on Machine Learning and Data Engineering.</p>
+          <p class="tags">RoBERTa · Hugging Face · TensorFlow</p>
+        </article>
+      </div>
+      <p class="more"><a href="https://github.com/karannsharma01" target="_blank" rel="noopener">More on GitHub ↗</a></p>
+    </section>
+
+    <section class="block" id="thinking">
+      <h2>How I think</h2>
+      <p class="sub">Different models, same loop.</p>
+      <div class="tabs" role="tablist" aria-label="Working loop">
+        <button role="tab" aria-selected="true" aria-controls="p0" id="t0">Question</button>
+        <button role="tab" aria-selected="false" aria-controls="p1" id="t1" tabindex="-1">Measure</button>
+        <button role="tab" aria-selected="false" aria-controls="p2" id="t2" tabindex="-1">Ship</button>
+        <button role="tab" aria-selected="false" aria-controls="p3" id="t3" tabindex="-1">Learn</button>
+      </div>
+      <div class="panel" role="tabpanel" id="p0" aria-labelledby="t0">
+        <h3>Start with the failure, not the model.</h3>
+        <p>What breaks, for whom, and how often? A 504 timeout and a blurry output are different problems, even when both get called "the model is slow."</p>
+      </div>
+      <div class="panel" role="tabpanel" id="p1" aria-labelledby="t1" hidden>
+        <h3>Numbers before opinions.</h3>
+        <p>VRAM, latency, PSNR, SSIM. I pick the metric first, so every change either helps or it doesn't.</p>
+      </div>
+      <div class="panel" role="tabpanel" id="p2" aria-labelledby="t2" hidden>
+        <h3>A model isn't done until it's deployed.</h3>
+        <p>Containers, async queues, CI/CD, and limits that hold under load. Production is where the real evaluation happens.</p>
+      </div>
+      <div class="panel" role="tabpanel" id="p3" aria-labelledby="t3" hidden>
+        <h3>Keep the loop short.</h3>
+        <p>Papers, internships, side projects, and 150+ solved algorithm problems. Each one makes the next question sharper.</p>
+      </div>
+    </section>
+
+    <section class="block" id="about">
+      <h2>More than a job title</h2>
+      <div class="cols">
+        <div>
+          <h3 class="small">Experience</h3>
+          <ul class="timeline">
+            <li><strong>AI/ML Engineer, Dripi</strong><span>Jan 2026 – now</span></li>
+            <li><strong>Research Intern, IIT Mandi</strong><span>Jun – Jul 2025</span></li>
+            <li><strong>ML Intern, NIT Hamirpur</strong><span>Jun – Jul 2024</span></li>
+            <li><strong>B.Tech CSE (AI &amp; ML), JNGEC Sundernagar</strong><span>2022 – 2026 · CGPA 7.95</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="small">Toolbox</h3>
+          <ul class="chips">
+            <li>Python</li><li>C/C++</li><li>JavaScript</li><li>SQL</li>
+            <li>PyTorch</li><li>TensorFlow</li><li>Scikit-learn</li><li>Hugging Face</li><li>LangChain</li>
+            <li>Docker</li><li>Kubernetes</li><li>AWS EC2</li><li>GitHub Actions</li><li>FastAPI</li>
+            <li>MongoDB</li><li>MySQL</li><li>Qdrant</li><li>ChromaDB</li><li>Streamlit</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="block contact" id="contact">
+      <h2>Have a model that won't fit? Let's talk.</h2>
+      <a class="mail" href="mailto:karansharma21004@gmail.com">karansharma21004@gmail.com</a>
+      <p class="links">
+        <a href="https://github.com/karannsharma01" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="https://www.youtube.com/@karanosharma" target="_blank" rel="noopener">YouTube ↗</a>
+        <a href="https://leetcode.com/" target="_blank" rel="noopener">LeetCode ↗</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year">2026</span> Karan Sharma</span>
+    <a href="#top">Back to the top ↑</a>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
